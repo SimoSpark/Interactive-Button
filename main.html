@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactive Button</title>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <button class="button" onclick="showMessage()">Click me!</button>
+    <div id="message" style="display:none;">
+      <h2>Hello world it's Simo Spark </h2> <br>
+      <h3>my world of coding @</h3>
+    </div>
+
+    <script>
+      function showMessage() {
+        var message = document.getElementById("message");
+        if (message.style.display === "none") {
+          message.style.display = "block";
+        } else {
+          message.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
